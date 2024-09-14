@@ -1,0 +1,7 @@
+html {
+    background-color: var(--clr-primary);
+}
+
+body {
+    margin: calc(0.5rem + 2vh) calc(0.5rem + 2vw);
+}

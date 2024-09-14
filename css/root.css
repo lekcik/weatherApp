@@ -1,0 +1,11 @@
+:root {
+    --clr-primary: rgb(11, 17, 29);
+    --сlr-secondary: rgb(32, 44, 60);
+
+    --clr-text-primary: rgb(216, 220, 229);
+    --clr-text-secondary: rgb(128, 137, 154);
+
+    --padding-index-medium: 0.5rem;
+
+    --border-radius-index: 0.8rem;
+}

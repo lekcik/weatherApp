@@ -1,0 +1,23 @@
+form.searchBar {
+    background-color: var(--сlr-secondary);
+    padding: var(--padding-index-medium);
+    border-radius: var(--border-radius-index);
+}
+
+form input {
+    background-color: transparent;
+    border: none;
+    color: var(--clr-text-primary);
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+form input::placeholder {
+    color: var(--clr-text-primary);
+    opacity: 0.9;
+}
+
+form input:focus {
+    border: none;
+    outline: none;
+}
