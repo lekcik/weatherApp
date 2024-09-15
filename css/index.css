@@ -113,9 +113,14 @@ section.todaysForecast section.forecastContainer .hourForecast:not(:last-of-type
     text-align: right;
 }
 
+.temperature-range span {
+    color: var(--clr-text-secondary);
+}
+
 .forecast-date {
     text-align: left;
     word-wrap: break-word;
+    color: var(--clr-text-secondary);
 }
 
 .forecast-grid .weather-icon {
