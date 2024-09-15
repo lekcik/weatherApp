@@ -10,5 +10,7 @@
     --border-radius-index: 0.8rem;
 
     --text-index: 1rem;
-    --text-multiplier: 1.25;
+
+    --transition-fast: 0.15s;
+    --transition-medium: 0.3s;
 }

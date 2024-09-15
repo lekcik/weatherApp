@@ -1,7 +1,10 @@
+/* form */
+
 form.searchBar {
     background-color: var(--сlr-secondary);
     padding: var(--padding-index-medium);
     border-radius: var(--border-radius-index);
+    transition: all var(--transition-medium);
 }
 
 form input {
@@ -22,3 +25,10 @@ form input:focus {
     border: none;
     outline: none;
 }
+
+form:has(input:focus) {
+    box-shadow: 0 0.2rem 0.5rem var(--сlr-secondary);
+    transform: translateY(-0.2rem);
+}
+
+/* weather preview */ 
