@@ -60,4 +60,36 @@ section.weatherPreview .prevIcon img {
 section.todaysForecast {
     background-color: var(--сlr-secondary);
     border-radius: var(--border-radius-index);
+
+    padding: 0 var(--padding-index-medium);
+    padding-bottom: var(--padding-index-medium);
+}
+
+section.todaysForecast h3,
+section.todaysForecast h4,
+section.todaysForecast p {
+    margin-top: var(--margin-index-small);
+    margin-bottom: var(--margin-index-small);
+}
+
+section.todaysForecast h3 {
+    margin-bottom: calc(0.5rem + var(--margin-index-small));
+}
+
+section.todaysForecast section.forecastContainer {
+    display: flex;
+    justify-content: flex-start;
+
+    overflow-x: scroll;
+}
+
+section.todaysForecast section.forecastContainer .hourForecast {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.todaysForecast section.forecastContainer .hourForecast:not(:last-of-type) {
+    border-right: 0.01rem solid var(--clr-text-secondary);
 }
