@@ -40,3 +40,18 @@ h2 {
 h1 {
     font-size: 3.815rem;
 }
+
+section.forecast {
+    background-color: var(--сlr-secondary);
+    border-radius: var(--border-radius-index);
+
+    padding: 0 var(--padding-index-medium);
+    padding-bottom: var(--padding-index-medium);
+}
+
+section.forecast h3,
+section.forecast h4,
+section.forecast p {
+    margin-top: var(--margin-index-small);
+    margin-bottom: var(--margin-index-small);
+}
