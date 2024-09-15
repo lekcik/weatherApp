@@ -131,3 +131,32 @@ section.todaysForecast section.forecastContainer .hourForecast:not(:last-of-type
 .forecast-grid .weather-description {
     color: var(--clr-text-primary);
 }
+
+/* air conditions */
+
+section.airConditions h3 {
+    margin-bottom: var(--margin-index-medium);
+}
+
+section.airConditions .conditionsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap-index);
+}
+
+section.airConditions .conditionsContainer .condition {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--gap-index);
+}
+
+section.airConditions .conditionsContainer .condition p {
+    margin-top: 0;
+}
+
+section.airConditions .conditionsContainer .condition svg {
+    fill: var(--clr-text-secondary);
+    stroke: var(--clr-text-secondary);
+    width: 56px;
+    height: 56px;
+}

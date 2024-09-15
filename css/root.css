@@ -7,6 +7,7 @@
 
     --padding-index-medium: 0.5rem;
     --margin-index-small: 0.5rem;
+    --margin-index-medium: 1rem;
     --gap-index: calc(0.3rem + 1vh);
 
     --border-radius-index: 0.8rem;

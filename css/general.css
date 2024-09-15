@@ -51,6 +51,7 @@ section.forecast {
 
 section.forecast h3,
 section.forecast h4,
+section.forecast h5,
 section.forecast p {
     margin-top: var(--margin-index-small);
     margin-bottom: var(--margin-index-small);
