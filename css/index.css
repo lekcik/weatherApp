@@ -10,6 +10,7 @@ form input {
     color: var(--clr-text-primary);
     min-width: 100%;
     box-sizing: border-box;
+    padding-left: calc(0.5rem + 0.1vw);
 }
 
 form input::placeholder {
