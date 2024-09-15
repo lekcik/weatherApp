@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/root.css">
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/index.css">
+    <script defer src="../js/index.js"></script>
 </head>
+
 <body>
     <section class="mainContent" aria-label="weather display">
         <form class="searchBar" aria-label="search for cities">
-            <input type="text" placeholder="Search for cities" maxlength="36" pattern="[A-Za-z\s\-]+" title="Only letters, spaces, and hyphens are allowed">
+            <input type="text" placeholder="Search for cities" maxlength="36" pattern="[A-Za-z\s\-]+"
+                title="Only letters, spaces, and hyphens are allowed">
         </form>
-    </section>
 
-    <section class="weatherPreview" aria-label="short weather forecast">
-        <section class="basicInfo">
-            <h1>City</h1>
-            <p>Chance of rain:</p>
-            <h2>grad°</h2>
+        <section class="weatherPreview" aria-label="short weather forecast">
+            <section class="basicInfo">
+                <h1>City</h1>
+                <p>Chance of rain:</p>
+                <h2>grad°</h2>
+            </section>
+            <section class="prevIcon">
+                <img class="icon js-icon-preview" src="../data/img_layout_test.png">
+            </section>
         </section>
-        <section class="prevIcon">
-            <svg></svg>
+
+        <section class="todaysForecast" aria-label="full forecast for today">
+            <h3>Today's forecast</h3>
+            <section class="hourForecast" aria-label="forecast hourly">
+                <p>6:00 AM</p>
+                <img class="icon" src="../data/img_layout_test.png">
+                <h4>25°</h4>
+            </section>
         </section>
+
     </section>
 </body>
+
 </html>

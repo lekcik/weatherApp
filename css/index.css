@@ -32,3 +32,32 @@ form:has(input:focus) {
 }
 
 /* weather preview */ 
+
+section.weatherPreview {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    padding-left: calc(0.8rem + 1vw);
+    padding-right: calc(0.8rem + 1vw);
+}
+
+section.basicInfo h1 {
+    margin: 0;
+}
+
+section.weatherPreview .prevIcon {
+    position: relative;
+}
+
+section.weatherPreview .prevIcon img {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+/* todays forecast */
+
+section.todaysForecast {
+    background-color: var(--сlr-secondary);
+    border-radius: var(--border-radius-index);
+}

@@ -3,9 +3,10 @@
     --сlr-secondary: rgb(32, 44, 60);
 
     --clr-text-primary: rgb(216, 220, 229);
-    --clr-text-secondary: rgb(128, 137, 154);
+    --clr-text-secondary: rgb(146, 156, 174);
 
     --padding-index-medium: 0.5rem;
+    --gap-index: calc(0.3rem + 1vh);
 
     --border-radius-index: 0.8rem;
 

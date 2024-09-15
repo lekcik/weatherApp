@@ -5,8 +5,12 @@ html {
     font-size: var(--text-index);
 }
 
-body {
-    margin: calc(0.5rem + 2vh) calc(0.5rem + 2vw);
+section.mainContent {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-index);
+    
+    padding: calc(0.5rem + 2vh) calc(0.3rem + 1vw);
 }
 
 p {
