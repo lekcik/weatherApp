@@ -272,8 +272,10 @@ async function runApp() {
     }
 
     else {
+        let HTML = formHTMLGenerate()
         const mainContainer = document.querySelector('.js-main')
-        mainContainer.innerHTML = `Data was not loaded :(`
+        mainContainer.innerHTML += HTML
+        mainContainer.innerHTML += `Data was not loaded :(`
     }
 }
 
