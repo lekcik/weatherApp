@@ -18,8 +18,8 @@
 
 <body>
     <section class="mainContent" aria-label="weather display">
-        <form class="searchBar" aria-label="search for cities">
-            <input type="text" placeholder="Search for cities" maxlength="36" pattern="[A-Za-z\s\-]+"
+        <form onsubmit="submitHandler(event)" class="searchBar" aria-label="search for cities">
+            <input class="js-input" type="text" placeholder="Search for cities" maxlength="36" pattern="[A-Za-z\s\-]+"
                 title="Only letters, spaces, and hyphens are allowed">
         </form>
 

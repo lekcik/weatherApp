@@ -59,7 +59,7 @@ section.forecast p {
 
 /* media */ 
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 1150px) {
     section.mainContent {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
