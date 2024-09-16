@@ -267,11 +267,13 @@ async function runApp() {
     if (data) {
         const mainContainer = document.querySelector('.js-main')
         let HTML = generateHTML(data)
-        console.log(HTML)
-
-        console.log(data)
 
         mainContainer.innerHTML = HTML
+    }
+
+    else {
+        const mainContainer = document.querySelector('.js-main')
+        mainContainer.innerHTML = `Data was not loaded :(`
     }
 }
 
