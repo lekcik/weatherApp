@@ -80,6 +80,12 @@ section.todaysForecast section.forecastContainer .hourForecast:not(:last-of-type
     border-right: 0.01rem solid var(--clr-text-secondary);
 }
 
+@media all and (min-width: 1150px) {
+    section.todaysForecast section.forecastContainer {
+        overflow-x: hidden;
+    }
+}
+
 /* weekly forecast */
 
 .forecast-grid {
