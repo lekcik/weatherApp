@@ -130,64 +130,64 @@ function weekForecHTMLGenerate(data) {
                 <section class="forecast-day">
                     <div class="forecast-date">Today</div>
                     <div class="forecast-details">
-                        <img class="weather-icon" src="../data/img_layout_test.png" alt="Rainy weather icon">
-                        <span class="weather-description">Rainy</span>
+                        <img class="weather-icon" src="${data.forecast.forecastday[0].day.condition.icon}">
+                        <span class="weather-description">${data.forecast.forecastday[0].day.condition.text}</span>
                     </div>
-                    <div class="temperature-range">14<span>/9</span></div>
+                    <div class="temperature-range">${data.forecast.forecastday[0].day.maxtemp_c}°<span>/${data.forecast.forecastday[0].day.mintemp_c}°</span></div>
                 </section>
         
                 <section class="forecast-day">
                     <div class="forecast-date">${getDayName(data.forecast.forecastday[1].date)}</div>
                     <div class="forecast-details">
-                        <img class="weather-icon" src="../data/img_layout_test.png" alt="Rainy weather icon">
-                        <span class="weather-description">Rainy</span>
+                        <img class="weather-icon" src="${data.forecast.forecastday[1].day.condition.icon}">
+                        <span class="weather-description">${data.forecast.forecastday[1].day.condition.text}</span>
                     </div>
-                    <div class="temperature-range">14<span>/9</span></div>
+                    <div class="temperature-range">${data.forecast.forecastday[0].day.maxtemp_c}°<span>/${data.forecast.forecastday[0].day.mintemp_c}°</span></div>
                 </section>
         
                 <section class="forecast-day">
-                    <div class="forecast-date">Tue</div>
+                    <div class="forecast-date">${getDayName(data.forecast.forecastday[2].date)}</div>
                     <div class="forecast-details">
-                        <img class="weather-icon" src="../data/img_layout_test.png" alt="Rainy weather icon">
-                        <span class="weather-description">Rainy</span>
+                        <img class="weather-icon" src="${data.forecast.forecastday[2].day.condition.icon}">
+                        <span class="weather-description">${data.forecast.forecastday[2].day.condition.text}</span>
                     </div>
-                    <div class="temperature-range">14<span>/9</span></div>
+                    <div class="temperature-range">${data.forecast.forecastday[1].day.maxtemp_c}°<span>/${data.forecast.forecastday[1].day.mintemp_c}°</span></div>
                 </section>
         
                 <section class="forecast-day">
-                    <div class="forecast-date">Wed</div>
+                    <div class="forecast-date">${getDayName(data.forecast.forecastday[3].date)}</div>
                     <div class="forecast-details">
-                        <img class="weather-icon" src="../data/img_layout_test.png" alt="Rainy weather icon">
-                        <span class="weather-description">Rainy</span>
+                        <img class="weather-icon" src="${data.forecast.forecastday[3].day.condition.icon}">
+                        <span class="weather-description">${data.forecast.forecastday[3].day.condition.text}</span>
                     </div>
-                    <div class="temperature-range">14<span>/9</span></div>
+                    <div class="temperature-range">${data.forecast.forecastday[3].day.maxtemp_c}°<span>/${data.forecast.forecastday[2].day.mintemp_c}°</span></div>
                 </section>
         
                 <section class="forecast-day">
-                    <div class="forecast-date">Thu</div>
+                    <div class="forecast-date">${getDayName(data.forecast.forecastday[4].date)}</div>
                     <div class="forecast-details">
-                        <img class="weather-icon" src="../data/img_layout_test.png" alt="Rainy weather icon">
-                        <span class="weather-description">Rainy</span>
+                        <img class="weather-icon" src="${data.forecast.forecastday[4].day.condition.icon}">
+                        <span class="weather-description">${data.forecast.forecastday[4].day.condition.text}</span>
                     </div>
-                    <div class="temperature-range">14<span>/9</span></div>
+                    <div class="temperature-range">${data.forecast.forecastday[4].day.maxtemp_c}°<span>/${data.forecast.forecastday[4].day.mintemp_c}°</span></div>
                 </section>
         
                 <section class="forecast-day">
-                    <div class="forecast-date">Fri</div>
+                    <div class="forecast-date">${getDayName(data.forecast.forecastday[5].date)}</div>
                     <div class="forecast-details">
-                        <img class="weather-icon" src="../data/img_layout_test.png" alt="Rainy weather icon">
-                        <span class="weather-description">Rainy</span>
+                        <img class="weather-icon" src="${data.forecast.forecastday[5].day.condition.icon}">
+                        <span class="weather-description">${data.forecast.forecastday[5].day.condition.text}</span>
                     </div>
-                    <div class="temperature-range">14<span>/9</span></div>
+                    <div class="temperature-range">${data.forecast.forecastday[5].day.maxtemp_c}°<span>/${data.forecast.forecastday[5].day.mintemp_c}°</span></div>
                 </section>
         
                 <section class="forecast-day">
-                    <div class="forecast-date">Sat</div>
+                    <div class="forecast-date">${getDayName(data.forecast.forecastday[6].date)}</div>
                     <div class="forecast-details">
-                        <img class="weather-icon" src="../data/img_layout_test.png" alt="Rainy weather icon">
-                        <span class="weather-description">Rainy</span>
+                        <img class="weather-icon" src="${data.forecast.forecastday[6].day.condition.icon}">
+                        <span class="weather-description">${data.forecast.forecastday[6].day.condition.text}</span>
                     </div>
-                    <div class="temperature-range">14<span>/9</span></div>
+                    <div class="temperature-range">${data.forecast.forecastday[6].day.maxtemp_c}°<span>/${data.forecast.forecastday[6].day.mintemp_c}°</span></div>
                 </section>
             </section>
         </section>
@@ -223,6 +223,8 @@ async function runApp() {
         console.log(HTML)
 
         console.log(data)
+
+        mainContainer.innerHTML = HTML
     }
 }
 

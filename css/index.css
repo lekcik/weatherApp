@@ -132,6 +132,12 @@ section.todaysForecast section.forecastContainer .hourForecast:not(:last-of-type
     color: var(--clr-text-primary);
 }
 
+@media all and (max-width: 1150px) {
+    .forecast-grid .weather-description {
+        display: none;
+    }
+}
+
 /* air conditions */
 
 section.airConditions h3 {
